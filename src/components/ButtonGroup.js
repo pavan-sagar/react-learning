@@ -1,5 +1,5 @@
 import React from 'react';
-import { store } from '../store';
+import { store } from '../redux/store';
 import { changeMember } from '../actions/changeMember';
 
 export const ButtonGroup = ({members}) => {

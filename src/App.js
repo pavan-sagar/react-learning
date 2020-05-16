@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 import  { HelloWorld }  from './components/HelloWorld';
 import { Component } from 'react';
-import { store }  from './store/index'
+import { store }  from './redux/store'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
