@@ -92,8 +92,8 @@ less_balance:false
       <input type="text" placeholder="To..." className="mr-4" value={this.state.toName} onChange={e=>this.setState({toName:e.target.value,less_balance:false})}></input>
       <input type="text" placeholder="Amount" className="mr-4" value={this.state.amount} onChange={e=>this.setState({amount:e.target.value})}></input>
       </div>
-      <button type='submit' className='mt-4' onClick={this.handleSendMoney}>Send</button>
-      <button type='submit' className='mt-4 ml-5' onClick={()=>this.setState({fromName:'',toName:'',amount: '',less_balance:false})}>Reset</button>
+      <button type='submit' className='mt-4 btn btn-success font-weight-bold' onClick={this.handleSendMoney}>Send</button>
+      <button type='submit' className='mt-4 ml-5 btn btn-danger font-weight-bold' onClick={()=>this.setState({fromName:'',toName:'',amount: '',less_balance:false})}>Reset</button>
 
       { this.state.less_balance ? <p> Sorry {this.state.fromName} does not have enough money in account to do the transfer</p> : <p></p>}
     </div>
